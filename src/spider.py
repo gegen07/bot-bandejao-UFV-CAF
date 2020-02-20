@@ -14,18 +14,26 @@ headers = {
     'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
 }
 
+url = 'http://cardapioufv.com.br/cardapioufv/php/get_ru_fl.php'
+
+def make_request(url, headers):
+  try:
+    return requests.get(url, headers=headers, verify=False)
+  except requests.exceptions.ConnectionError as err:
+    print("Ocurred a connection error")
+
 def separate_meals(json_data):
   SEPARATOR_MEAL = 4
   SEPARATOR_WEEK = 12
 
   week_days = {
-    12: "Domingo-1",
-    24: "Segunda",
-    36: "Terça"  ,
-    48: "Quarta" ,
-    60: "Quinta" ,
-    72: "Sexta"  ,
-    84: "Sábado" 
+    12: "Sunday"
+    24: "Monday",
+    36: "Tuesday"  ,
+    48: "Wednesday" ,
+    60: "Thursday" ,
+    72: "Friday"  ,
+    84: "Saturday" 
   }
 
   meals_of_day = {
@@ -57,13 +65,9 @@ def separate_meals(json_data):
     if food["pid"] == 84:
       return dict_week
 
-try:
-  response = requests.get('http://cardapioufv.com.br/cardapioufv/php/get_ru_fl.php', headers=headers, verify=False)
-  # with open(DATA_PATH + datetime.now().strftime("%Y-%m-%d|%H:%M:%S") + ".json", "w") as f:
-  #   json.dump(response.json(), f)
-  #   
-  with open(DATA_PATH + ".json", "w") as f:
-    json.dump(separate_meals(response.json()), f, indent=2, ensure_ascii=False)
+def get_meals_of_day(data, date):
+  return data[datetime.today().strftime('%A')]
 
-except requests.exceptions.ConnectionError as err:
-  print("Ocurred a connection error")
+if __name__ == "__main__":
+  with open(DATA_PATH + datetime.now().strftime("%Y-%m-%d") + ".json", "w") as f:
+    json.dump(separate_meals(make_request(headers).json()), f, indent=2, ensure_ascii=False)
