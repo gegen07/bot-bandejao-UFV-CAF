@@ -1,8 +1,9 @@
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
+from settings import SCHEDULE_BREAKFAST, SCHEDULE_LUNCH, SCHEDULE_DINER
 
-DATA_PATH = "../data/cardapio"
+DATA_PATH = "../data/"
 
 headers = {
     'Connection': 'keep-alive',
@@ -65,9 +66,19 @@ def separate_meals(json_data):
     if food["pid"] == 84:
       return dict_week
 
-def get_meals_of_day(data, date):
-  return data[datetime.today().strftime('%A')]
-
-if __name__ == "__main__":
+def get_data():
   with open(DATA_PATH + datetime.now().strftime("%Y-%m-%d") + ".json", "w") as f:
     json.dump(separate_meals(make_request(headers).json()), f, indent=2, ensure_ascii=False)
+
+def read_data(time):
+  from os import listdir, path
+  
+  for file in listdir(DATA_PATH):
+    base = path.basename(file)
+    filename_str = path.splitext(base)[0]
+    filename_time = datetime.strptime(filename_str, '%Y-%m-%d')
+
+    # TODO: check if time is ranged over filename to choose the file to get the data
+    # HINT: Use timedelta to get the difference 
+
+    
