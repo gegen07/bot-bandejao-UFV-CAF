@@ -66,11 +66,11 @@ def separate_meals(json_data):
     if food["pid"] == 84:
       return dict_week
 
-def get_data():
+def Get_data():
   with open(DATA_PATH + datetime.now().strftime("%Y-%m-%d") + ".json", "w") as f:
     json.dump(separate_meals(make_request(headers).json()), f, indent=2, ensure_ascii=False)
 
-def read_data(time):
+def Search_file(time):
   from os import listdir, path
   
   for file in listdir(DATA_PATH):
@@ -78,7 +78,9 @@ def read_data(time):
     filename_str = path.splitext(base)[0]
     filename_time = datetime.strptime(filename_str, '%Y-%m-%d')
 
-    # TODO: check if time is ranged over filename to choose the file to get the data
-    # HINT: Use timedelta to get the difference 
+    if time <= filename_time + timedelta(days=7)
+      return file 
 
-    
+def Read_data():
+  with open(DATA_PATH + file) as f:
+    return json.loads(f.read())
