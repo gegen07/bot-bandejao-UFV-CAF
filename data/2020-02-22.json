@@ -1,0 +1,142 @@
+{
+  "Sunday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "-",
+      ""
+    ],
+    "Almoço": [
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "Jantar": [
+      "-",
+      "-",
+      "-",
+      "-"
+    ]
+  },
+  "Monday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "-",
+      "-"
+    ],
+    "Almoço": [
+      "Carne Mista",
+      "Vegetariano: Ovos Cozidos",
+      "Mix de Folhas e Beterraba com Pepino",
+      "Cuzcuz Temperado"
+    ],
+    "Jantar": [
+      "Bife de Porco",
+      "Vegetariano: Soja Refogada",
+      "Alface e Abobrinha com Tomate",
+      "Batata ao Molho"
+    ]
+  },
+  "Tuesday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "Pão de Sal",
+      "Melancia"
+    ],
+    "Almoço": [
+      "Iscas de Frango com Cebola",
+      "Vegetariano: Omelete Simples",
+      "Couve e Cenoura com Tomate",
+      "Mandioca ao Molho"
+    ],
+    "Jantar": [
+      "Carne Cozida",
+      "Vegetariano: Ovo Cozido",
+      "Almeirão e Beterraba com Repolho Roxo",
+      "Moranga Acebolada"
+    ]
+  },
+  "Wednesday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "Mingau de milho",
+      "Melão"
+    ],
+    "Almoço": [
+      "Linguiça Assada",
+      "Vegetariano: Ovo Frito",
+      "Alface e Chuchu Delícia",
+      "Legumes ao Molho Branco"
+    ],
+    "Jantar": [
+      "Bife de Frango",
+      "Vegetariano: Omelete Assado",
+      "Acelga e Beterraba com Pepino",
+      "Creme de Legumes"
+    ]
+  },
+  "Thursday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "Leite com açucar queimado",
+      "Banana"
+    ],
+    "Almoço": [
+      "Lombo Xadrez",
+      "Vegetariano: Soja Xadrez",
+      "Almeirão e Abobrinha com Tomate",
+      "Macarrão ao Molho"
+    ],
+    "Jantar": [
+      "Frango Assado",
+      "Vegetariano: Torta de Soja Assada",
+      "Alface e Cenoura com Tomate",
+      "Repolho refogado com Tomate"
+    ]
+  },
+  "Friday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com requeijão",
+      "Mingau de aveia",
+      "Melancia"
+    ],
+    "Almoço": [
+      "Feijão tropeiro",
+      "Vegetariano: Tropeiro de soja",
+      "Alface e Beterraba com Pepino",
+      "Legumes sauté"
+    ],
+    "Jantar": [
+      "Peixe frito",
+      "Vegetariano: Ovo Frito",
+      "Acelga e Chuchu Delícia",
+      "Pirão"
+    ]
+  },
+  "Saturday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "Bolo Simples",
+      "Melão"
+    ],
+    "Almoço": [
+      "Carne Assada",
+      "Vegetariano: Torta de Legumes",
+      "Mix de Folhas e Cenoura com Fradinho",
+      "Purê de Legumes"
+    ],
+    "Jantar": [
+      "Lombo ao Molho ",
+      "Vegetariano: Ovo ao Molho",
+      "Mix de Folhas e Abobrinha com Tomate",
+      "Batata Assada"
+    ]
+  }
+}
