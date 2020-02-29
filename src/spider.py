@@ -59,6 +59,7 @@ def separate_meals(json_data):
 
     if food["pid"] == 84:
       return dict_week
+
 def Get_data():
   try:
     response = requests.get(url, headers=headers, verify=False)

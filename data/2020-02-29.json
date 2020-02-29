@@ -1,0 +1,142 @@
+{
+  "Sunday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "-",
+      ""
+    ],
+    "Almoço": [
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "Jantar": [
+      "-",
+      "-",
+      "-",
+      "-"
+    ]
+  },
+  "Monday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "Mingau de Aveia",
+      "Melão"
+    ],
+    "Almoço": [
+      "Isca de Frango",
+      "Vegetariano: Almôndega de Soja",
+      "Cenoura com Milho Verde",
+      "Legumes Sautè"
+    ],
+    "Jantar": [
+      "Bisteca",
+      "Vegetariano: Rocambole de Soja",
+      "Abobrinha com Tomate",
+      "Moranga Acebolada"
+    ]
+  },
+  "Tuesday": {
+    "Café da Manhã": [
+      "Café com e sem Açúcar",
+      "Leite/Pão com Manteiga",
+      "Leite com Achocolatado",
+      "Melancia"
+    ],
+    "Almoço": [
+      "Isca de Porco",
+      "Vegetariano: Omelete Simples",
+      "Chuchu Delícia",
+      "Batata ao Molho"
+    ],
+    "Jantar": [
+      "Linguiça Acebolada",
+      "Vegetariano: Ovo Frito",
+      "Beterraba com Repolho Roxo",
+      "Purê de Legumes"
+    ]
+  },
+  "Wednesday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "Mingau de Milho",
+      "Melão"
+    ],
+    "Almoço": [
+      "Carne Mista",
+      "Vegetariano: Soja Refogada",
+      "Beterraba com Tomate",
+      "Macarronada"
+    ],
+    "Jantar": [
+      "Bife de Frango",
+      "Vegetariano: Lasanha de Legumes",
+      "Cenoura com Milho",
+      "Polenta"
+    ]
+  },
+  "Thursday": {
+    "Café da Manhã": [
+      "Café com e sem Açúcar",
+      "Leite/Pão com Manteiga",
+      "Leite com Açúcar Queimado",
+      "Banana"
+    ],
+    "Almoço": [
+      "Isca de Boi Acebolada",
+      "Vegetariano: Omelete Assado",
+      "Mix de Legumes",
+      "Mandioca Ensopada"
+    ],
+    "Jantar": [
+      "Coxa e Sobrecoxa",
+      "Vegetariano: Suflê de Soja",
+      "Feijão Fradinho ao Vinagrete",
+      "Farofa Simples"
+    ]
+  },
+  "Friday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com requeijão",
+      "Mingau de Aveia",
+      "Melancia"
+    ],
+    "Almoço": [
+      "Feijão Tropeiro com Ovo",
+      "Vegetariano: Feijão Tropeiro de Soja",
+      "Vinagrete de Abobrinha",
+      "Molho de Batata"
+    ],
+    "Jantar": [
+      "Carne Moída",
+      "Vegetariano: Almôndega de Soja",
+      "Mix de Legumes",
+      "Batata Corada"
+    ]
+  },
+  "Saturday": {
+    "Café da Manhã": [
+      "Café com ou sem açúcar",
+      "Leite / Pão com manteiga",
+      "-",
+      "-"
+    ],
+    "Almoço": [
+      "-",
+      "-",
+      "-",
+      "-"
+    ],
+    "Jantar": [
+      "-",
+      "-",
+      "-",
+      "-"
+    ]
+  }
+}

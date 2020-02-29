@@ -27,7 +27,7 @@ def PostTweet(time):
   tweet += "Cardápio - " + datetime.today().strftime('%d/%m/%Y') + " - " + meal + "\n\n"
 
   for food in menu:
-    if food != ' ' and food != '-':
+    if food != ' ':
       tweet += food + "\n"
 
   api.update_status(tweet)
