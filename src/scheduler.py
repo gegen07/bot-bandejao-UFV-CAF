@@ -15,7 +15,7 @@ scheduler.add_job(tweet.PostTweet,
                   kwargs={'time': SCHEDULE_BREAKFAST}) 
 scheduler.add_job(tweet.PostTweet, 
                   'cron', 
-                  hour='',
+                  hour='9',
                   minute='30', 
                   kwargs={'time': SCHEDULE_LUNCH})
 scheduler.add_job(tweet.PostTweet, 
