@@ -1,18 +1,29 @@
 # scheduling process
-from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.schedulers.background import BlockingScheduler
 from settings import SCHEDULE_BREAKFAST, SCHEDULE_LUNCH, SCHEDULE_DINER
 from datetime import datetime, timedelta
 import tweet 
-import spider
+import spider  
 
 #scheduler to post Tweet
-if __name__ == "__main__":
-  scheduler = BackgroundScheduler()
+scheduler = BlockingScheduler({'apscheduler.timezone': 'America/Sao_Paulo'})
 
-  #  Using UTC time
-  scheduler.add_job(tweet.PostTweet(SCHEDULE_BREAKFAST), 'cron', hour='8') 
-  scheduler.add_job(tweet.PostTweet(SCHEDULE_LUNCH), 'cron', hour='12', minute='30')
-  scheduler.add_job(tweet.PostTweet(SCHEDULE_DINER), 'cron', hour='19')
+#  Using UTC time
+scheduler.add_job(tweet.PostTweet, 
+                  'cron', 
+                  hour='5', 
+                  kwargs={'time': SCHEDULE_BREAKFAST}) 
+scheduler.add_job(tweet.PostTweet, 
+                  'cron', 
+                  hour='',
+                  minute='30', 
+                  kwargs={'time': SCHEDULE_LUNCH})
+scheduler.add_job(tweet.PostTweet, 
+                  'cron', 
+                  hour='16', 
+                  kwargs={'time': SCHEDULE_DINER})
 
-  # schedule to get the data
-  scheduler.add_job(spider.Get_data(), 'cron', day='sat', hour='22')
+# schedule to get the data
+scheduler.add_job(spider.Get_data, 'cron', day_of_week='5', hour='22')
+
+scheduler.start()
